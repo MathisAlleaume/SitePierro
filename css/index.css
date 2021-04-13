@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+body {
+  margin: 0;
+}
+
+#hero {
+  background: url("../imgs/back1.jpg");
+  background-position: top !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  height: 50vh;
+  padding-top: 10px;
+  padding-left: 10%;
+}
+
+.heroIntroText {
+  width: 40%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.heroIntroText .heroIntroTitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 50pt;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.heroIntroText .heroIntroSubtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 20pt;
+  margin-bottom: 20px;
+}
+
+.heroIntroText .heroIntroButton {
+  font-family: 'Roboto', sans-serif;
+  margin-right: 15px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 20px;
+  border-radius: 4px;
+  background-color: white;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  border: 0;
+  line-height: inherit;
+}
+
+.heroIntroText .heroIntroButton:hover {
+  background-color: #353535;
+  color: white;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+  width: 95%;
+  height: auto;
+  color: white;
+  margin-bottom: 10%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .logo {
+  width: 7%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25pt;
+  margin-right: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navbar .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .menu .menuItem {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17pt;
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+#sec2,
+#sec4 {
+  background-color: #cdbfbf;
+  height: 30vh;
+}
+
+#sec3,
+#sec5 {
+  background-color: #a2abc7;
+  height: 30vh;
+}
+/*# sourceMappingURL=index.css.map */
