@@ -114,7 +114,7 @@ body {
 }
 
 
-.cards {
+.presCards {
     width: 100%;
     height: 100%;
     display: flex;
@@ -123,7 +123,7 @@ body {
     // padding: 30px 0 30px 30px;
     flex-direction: row;
 
-    .card {
+    .presCard {
         background-color: white;
         flex: 1;
         margin-right: 30px;
@@ -133,20 +133,20 @@ body {
 
         box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.1);
 
-        .cardTexts {
+        .presCardTexts {
             transition: all 300ms ease;
             padding: 35px 33px;
             flex: 1;
 
 
 
-            .cardTitle {
+            .presCardTitle {
                 transition: all 300ms ease;
                 font-family: "Roboto", sans-serif;
                 display: flex;
             }
 
-            .cardText {
+            .presCardText {
                 transition: all 300ms ease;
                 font-family: "Roboto", sans-serif;
                 font-size: 15pt;
@@ -154,11 +154,13 @@ body {
             }
 
             hr {
+            transition: all 300ms ease;
+
                 display: none;
             }
         }
 
-        .cardImg {
+        .presCardImg {
             transition: all 300ms ease;
             border-radius: 10px 10px 0 0;
             flex: 8;
@@ -175,31 +177,76 @@ body {
 
 
         &:hover {
-            .cardTexts {
+            .presCardTexts {
 
                 flex: 7;
 
-                .cardTitle {
+                .presCardTitle {
                     font-family: "Roboto", sans-serif;
                     // margin-bottom: 60%;
                 }
 
-                .cardText {
+                .presCardText {
                     font-family: "Roboto", sans-serif;
                     font-size: 15pt;
                     display: inline;
                 }
 
                 hr {
-                    display: inline-flex;
+                    display:flex;
                 }
             }
 
-            .cardImg {
+            .presCardImg {
                 flex: 2;
             }
         }
 
+
+    }
+
+}
+
+
+.dateCards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 1;
+    font-size: 25pt;
+    // padding: 30px 0 30px 30px;
+    flex-direction: row;
+
+    .dateCard {
+        background-color: white;
+        flex: 1;
+        margin-right: 30px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+
+        box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.1);
+
+        .dateCardTexts {
+            transition: all 300ms ease;
+            padding: 35px 33px;
+            flex: 1;
+
+
+
+            .dateCardTitle {
+                transition: all 300ms ease;
+                font-family: "Roboto", sans-serif;
+                display: flex;
+            }
+
+            .dateCardText {
+                transition: all 300ms ease;
+                font-family: "Roboto", sans-serif;
+                font-size: 15pt;
+            }
+
+        }
 
     }
 
@@ -268,7 +315,7 @@ body {
 }
 #sec5 {
     background-color: #484848;
-    height: 30vh;
+    height: 15vh;
 
     // margin-top: 20px;
     // border-radius: 10px;
