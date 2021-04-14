@@ -11,34 +11,84 @@
 
 <body>
     <section id="hero">
-        <div class="navbar">
+        <div class="navbar" id="Nav">
+            <!-- lien du logo -->
             <a href="#hero" class="logo">Pierro</a>
             <div class="menu">
-                <a href="#hero" class="menuItem">Projet</a>
-                <a href="#sec2" class="menuItem">Profil</a>
-                <a href="#sec3" class="menuItem">Videos</a>
-                <a href="#sec4" class="menuItem">Dates AV/AP</a>
-                <a href="#sec5" class="menuItem">Contact</a>
+                <a href="#hero" class="menuItem s-scroll-trigger">Présentation</a>
+                <a href="#sec3" class="menuItem s-scroll-trigger">Videos</a>
+                <a href="#sec4" class="menuItem s-scroll-trigger">Dates AV/AP</a>
+                <a href="#sec5" class="menuItem s-scroll-trigger">Contact</a>
             </div>
         </div>
         <div class="heroIntroText">
             <div class="heroIntroTitle">Musicien (presque) talentueux :</div>
             <div class="heroIntroSubtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
             <div class="heroIntroButtons">
-                <a href="#sec2" class="heroIntroButton">Projet</a>
+                <a href="#sec2" class="heroIntroButton">Présentation</a>
                 <a href="#sec5" class="heroIntroButton">Contact</a>
             </div>
         </div>
 
     </section>
     <section id="sec2">
-        projet
+        <div class="setionTitle">PRESENTATION</div>
+        <div class="cards">
+            <div class="card">
+                <div class="cardImg" id="bioImg"></div>
+                <div class="cardTexts">
+
+                    <div class="cardTitle">
+                        Bio
+                    </div>
+                    <hr>
+                    <div class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, expedita ab
+                        eligendi excepturi animi officiis error molestias qui. Vero nostrum iste accusamus, sed
+                        veritatis dolorem in id modi sunt quam.</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardImg" id="pentagoneImg"></div>
+                <div class="cardTexts">
+
+                    <div class="cardTitle">
+                        Pentagone
+                    </div>
+                    <hr>
+                    <div class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, expedita ab
+                        eligendi excepturi animi officiis error molestias qui. Vero nostrum iste accusamus, sed
+                        veritatis dolorem in id modi sunt quam.</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardImg" id="projetImg"></div>
+                <div class="cardTexts">
+
+                    <div class="cardTitle">
+                        Projet
+                    </div>
+                    <hr>
+                    <div class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, expedita ab
+                        eligendi excepturi animi officiis error molestias qui. Vero nostrum iste accusamus, sed
+                        veritatis dolorem in id modi sunt quam.</div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="sec3">Profil</section>
-    <section id="sec4">Videos</section>
+    <section id="sec3">
+        <div class="setionTitle">VIDEO</div>
+        <div id="player"></div>
+    </section>
+    <section id="sec4">
+        <div class="setionTitle">DATES AV/AP</div>
+    </section>
     <section id="sec5">Dates AV/AP</section>
 
+    <script src="./js/jquery/jquery.min.js"></script>
+    <script src="./js/jquery-easing/jquery.easing.min.js"></script>
+    <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/youtube.js"></script>
 </body>
 
 </html>
