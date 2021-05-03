@@ -1,20 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap");
 body {
   margin: 0;
 }
 
 #hero {
-  background: url("../imgs/back1.jpg");
-  background-position: top !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.60548)), to(rgba(194, 194, 194, 0.0844713))), url("../imgs/fond1.jpg");
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.60548) 0%, rgba(194, 194, 194, 0.0844713) 100%), url("../imgs/fond1.jpg");
+  background-attachment: fixed !important;
+  background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  height: 50vh;
+  height: 100vh;
   padding-top: 10px;
-  padding-left: 10%;
 }
 
 .heroIntroText {
-  width: 40%;
+  width: 80%;
+  height: 90%;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,41 +27,55 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: left;
+  margin-left: 7%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .heroIntroText .heroIntroTitle {
-  font-family: 'Roboto', sans-serif;
-  font-size: 50pt;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20pt;
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 .heroIntroText .heroIntroSubtitle {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  font-size: 20pt;
+  font-size: 13pt;
   margin-bottom: 20px;
 }
 
-.heroIntroText .heroIntroButton {
-  font-family: 'Roboto', sans-serif;
-  margin-right: 15px;
+.heroIntroText .heroIntroButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.heroIntroText .heroIntroButtons .heroIntroButton {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 15px;
   text-decoration: none;
-  display: inline-block;
-  padding: 15px 20px;
+  text-align: center;
+  padding: 5px 10px;
   border-radius: 4px;
   background-color: white;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
   color: black;
-  font-size: 16px;
+  font-size: 10t;
   font-weight: 400;
   text-decoration: none;
   border: 0;
   line-height: inherit;
 }
 
-.heroIntroText .heroIntroButton:hover {
+.heroIntroText .heroIntroButtons .heroIntroButton:active {
   background-color: #353535;
   color: white;
 }
@@ -68,48 +85,24 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-right: auto;
-  width: 95%;
-  height: auto;
-  color: white;
-  margin-bottom: 10%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: auto;
+  color: white;
+  margin-left: 7%;
 }
 
 .navbar .logo {
-  width: 7%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 25pt;
-  margin-right: 30px;
   color: white;
   text-decoration: none;
   font-weight: 700;
 }
 
 .navbar .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.navbar .menu .menuItem {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-flow: row-reverse;
-          flex-flow: row-reverse;
-  font-family: 'Roboto', sans-serif;
-  font-size: 17pt;
-  margin-right: 20px;
-  color: white;
-  text-decoration: none;
-}
-
-.navbar .menu .menuItem:hover {
-  text-decoration: underline;
+  display: none;
 }
 
 .presCards {
@@ -121,19 +114,18 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  font-size: 25pt;
-  -webkit-box-orient: horizontal;
+  font-size: 20pt;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .presCards .presCard {
   background-color: white;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  margin-bottom: 20px;
   margin-right: 30px;
+  margin-left: 30px;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -142,23 +134,30 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   -webkit-box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.1);
+}
+
+.presCards .presCard .hoverme {
+  display: none;
 }
 
 .presCards .presCard .presCardTexts {
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
-  padding: 35px 33px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .presCards .presCard .presCardTexts .presCardTitle {
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,56 +166,26 @@ body {
 .presCards .presCard .presCardTexts .presCardText {
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
-  font-family: "Roboto", sans-serif;
-  font-size: 15pt;
-  display: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13pt;
 }
 
 .presCards .presCard .presCardTexts hr {
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
-  display: none;
 }
 
 .presCards .presCard .presCardImg {
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
   border-radius: 10px 10px 0 0;
-  -webkit-box-flex: 8;
-      -ms-flex: 8;
-          flex: 8;
+  height: 150px;
+  width: 100%;
   background-repeat: no-repeat !important;
   background-size: cover !important;
+  background-position: center;
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-}
-
-.presCards .presCard:hover .presCardTexts {
-  -webkit-box-flex: 7;
-      -ms-flex: 7;
-          flex: 7;
-}
-
-.presCards .presCard:hover .presCardTexts .presCardTitle {
-  font-family: "Roboto", sans-serif;
-}
-
-.presCards .presCard:hover .presCardTexts .presCardText {
-  font-family: "Roboto", sans-serif;
-  font-size: 15pt;
-  display: inline;
-}
-
-.presCards .presCard:hover .presCardTexts hr {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.presCards .presCard:hover .presCardImg {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
 }
 
 .dateCards {
@@ -228,11 +197,11 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  font-size: 25pt;
-  -webkit-box-orient: horizontal;
+  font-size: 15pt;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .dateCards .dateCard {
@@ -241,6 +210,8 @@ body {
       -ms-flex: 1;
           flex: 1;
   margin-right: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -265,7 +236,7 @@ body {
 .dateCards .dateCard .dateCardTexts .dateCardTitle {
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -274,7 +245,7 @@ body {
 .dateCards .dateCard .dateCardTexts .dateCardText {
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 15pt;
 }
 
@@ -287,14 +258,13 @@ body {
 }
 
 #projetImg {
-  background: url("../imgs/test.png");
+  background: url("../imgs/card2.jpg");
 }
 
 #sec2,
 #sec4 {
   background-color: #eedddd85;
-  height: 30vh;
-  padding: 30px 0 30px 30px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -307,14 +277,16 @@ body {
 #sec2 .setionTitle,
 #sec4 .setionTitle {
   text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20pt;
   line-height: 50px;
   font-weight: 500;
   margin-bottom: 25px;
 }
 
 #sec3 {
+  padding-left: 30px;
+  padding-right: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,32 +295,327 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #484848;
-  height: 40vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 75vh;
 }
 
 #sec3 .setionTitle {
   color: white;
   text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20pt;
   line-height: 50px;
   font-weight: 500;
   margin-bottom: 25px;
 }
 
 #sec3 #player {
-  width: 1000px;
-  height: 565px;
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 100%;
+  margin-bottom: 30px;
 }
 
 #sec5 {
   background-color: #484848;
-  height: 15vh;
+  height: 100%;
+}
+
+#sec5 .madeBy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 20px;
+  font-size: 10pt;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+#sec5 .madeBy a {
+  margin-right: 5px;
+}
+
+#sec5 .setionTitle {
+  color: white;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20pt;
+  line-height: 50px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+#sec5 .contactInfos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  color: white !important;
+  font-size: 13pt !important;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+#sec5 .contactInfos .telephone {
+  margin-bottom: 15px;
+}
+
+#sec5 .contactInfos .mail {
+  margin-bottom: 15px;
+}
+
+#sec5 .contactInfos .socials {
+  margin-bottom: 15px;
+}
+
+#sec5 .contactInfos .Label {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 17pt;
+  margin-bottom: 8px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#sec5 .contactInfos hr {
+  display: none;
+}
+
+#sec5 .contactInfos a {
+  color: white !important;
+}
+
+#sec5 .contactInfos a .socialImg {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+@media screen and (min-width: 750px) {
+  .menu {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    margin-right: 5%;
+  }
+  .menu .menuItem {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13pt;
+    margin-right: 10px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+  }
+  .heroIntroText {
+    width: 80%;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    margin-left: 7%;
+  }
+  .heroIntroText .heroIntroTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30pt;
+    font-weight: 500;
+    margin-bottom: 13px;
+  }
+  .heroIntroText .heroIntroSubtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 20pt;
+    margin-bottom: 20px;
+  }
+  .heroIntroText .heroIntroButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .heroIntroText .heroIntroButtons .heroIntroButton {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 20px;
+    border-radius: 4px;
+    background-color: white;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    color: black;
+    font-size: 13pt;
+    font-weight: 400;
+    border: 0;
+    line-height: inherit;
+    margin-right: 10px;
+  }
+  .heroIntroText .heroIntroButtons .heroIntroButton:active {
+    background-color: #353535;
+    color: white;
+  }
+  #pentagoneImg {
+    background-position: center;
+  }
+  .presCardImg {
+    height: 250px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 7%;
+  }
+  .menu .menuItem {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17pt;
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  .menu .menuItem:hover {
+    text-decoration: underline;
+  }
+  .dateCards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #sec2 {
+    height: 37vh;
+  }
+  #sec2 .presCards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
+  #sec2 .presCards .presCardText {
+    display: none;
+    color: black;
+  }
+  #sec2 .presCards .presCardText a {
+    color: black;
+  }
+  #sec2 .presCards .presCardImg {
+    height: 300px !important;
+  }
+  #sec2 .presCards .hoverme {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10pt;
+    color: #7d7d7d;
+  }
+  #sec2 .presCards .presCard:hover .presCardImg {
+    height: 50px !important;
+  }
+  #sec2 .presCards .presCard:hover .presCardText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: visible;
+  }
+  #sec2 .presCards .presCard:hover hr {
+    display: block;
+  }
+  #sec2 .presCards .presCard:hover .hoverme {
+    display: none;
+  }
+  #sec5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17pt;
+    color: white !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-decoration: none;
+  }
+  #sec5 .madeBy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    bottom: 20px;
+    font-size: 10pt;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #sec5 .contactInfos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+  }
+  #sec5 .contactInfos .Label {
+    font-size: 22pt;
+  }
+  #sec5 .contactInfos a {
+    color: white !important;
+    margin-right: 15px;
+  }
+  #sec5 .contactInfos a .socialImg {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-height: 1450px) {
+  #sec2 {
+    height: 26vh !important;
+  }
 }
 /*# sourceMappingURL=index.css.map */

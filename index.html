@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="./css/index.css">
     <title>Pierro</title>
 </head>
@@ -23,7 +23,12 @@
         </div>
         <div class="heroIntroText">
             <div class="heroIntroTitle">Musicien (presque) talentueux :</div>
-            <div class="heroIntroSubtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+            <div class="heroIntroSubtitle">La chanson française joué en direct te manque ? Tu ne te retrouves pas dans
+                les styles musicaux actuels ? Mélodie, parole et message sont tes maitre-mots ?
+                Alors, Pierro te propose ces services le temps d’un soir.
+
+
+            </div>
             <div class="heroIntroButtons">
                 <a href="#sec2" class="heroIntroButton">Présentation</a>
                 <a href="#sec5" class="heroIntroButton">Contact</a>
@@ -34,7 +39,7 @@
     <section id="sec2">
         <div class="setionTitle">PRESENTATION</div>
         <div class="presCards">
-            <div class="presCard">
+            <div class="presCard" id="card1">
                 <div class="presCardImg" id="bioImg"></div>
                 <div class="presCardTexts">
 
@@ -42,25 +47,14 @@
                         Bio
                     </div>
                     <hr>
-                    <div class="presCardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, expedita ab
-                        eligendi excepturi animi officiis error molestias qui. Vero nostrum iste accusamus, sed
-                        veritatis dolorem in id modi sunt quam.</div>
-                </div>
-            </div>
-            <div class="presCard">
-                <div class="presCardImg" id="pentagoneImg"></div>
-                <div class="presCardTexts">
-
-                    <div class="presCardTitle">
-                        Pentagone
+                    <div class="presCardText">
+                        Jeune chanteur et musicien multi-instrumentaliste, passionné de musiques et de chansons à texte.
                     </div>
-                    <hr>
-                    <div class="presCardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, expedita ab
-                        eligendi excepturi animi officiis error molestias qui. Vero nostrum iste accusamus, sed
-                        veritatis dolorem in id modi sunt quam.</div>
+                    <div class="hoverme">Passe ta souris pour en savoir plus</div>
                 </div>
             </div>
-            <div class="presCard">
+
+            <div class="presCard" id="card3">
                 <div class="presCardImg" id="projetImg"></div>
                 <div class="presCardTexts">
 
@@ -68,16 +62,67 @@
                         Projet
                     </div>
                     <hr>
-                    <div class="presCardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, expedita ab
-                        eligendi excepturi animi officiis error molestias qui. Vero nostrum iste accusamus, sed
-                        veritatis dolorem in id modi sunt quam.</div>
+                    <div class="presCardText">Prôner une chanson travaillée avec un texte bien écrit est redevenu
+                        originale de nos jours.
+                        Redonnons un sens et des valeurs à nos chansons Françaises. <br> <br>
+                        De Cabrel à Renaud et de Brassens à Tryo, retrouvez leurs chansons réinterprétées en version
+                        acoustique, Guitare ou Piano/Voix, ou bien, en arrangement complet grâce à un système de boucle.
+                    </div>
+                    <div class="hoverme">Passe ta souris pour en savoir plus</div>
                 </div>
             </div>
+
+            <div class="presCard" id="card4">
+                <div class="presCardImg" id="projetImg"></div>
+                <div class="presCardTexts">
+
+                    <div class="presCardTitle">
+                        Lieux
+                    </div>
+                    <hr>
+                    <div class="presCardText">
+                        Peu importe le lieu :
+
+                        <ul>
+                            <li> Bars / Cafés / Restaurants</li>
+                            <li>Campings</li>
+                            <li>Marchés</li>
+                            <li>Mariages</li>
+                            <li>Evènements publics ou privés</li>
+                        </ul>
+                        Partage, voyage et réflexion seront au rendez-vous !
+
+                    </div>
+                    <div class="hoverme">Passe ta souris pour en savoir plus</div>
+                </div>
+            </div>
+
+            <div class="presCard" id="card2">
+                <div class="presCardImg" id="pentagoneImg"></div>
+                <div class="presCardTexts">
+
+                    <div class="presCardTitle">
+                        Pentagone
+                    </div>
+                    <hr>
+                    <div class="presCardText">A fait ces débuts au sein du groupe, de reprise Pop-rock, « Pentagone ».
+                        <br>
+                        Créant une solide expérience de la scène et du monde du spectacle. <br>
+                        <br>
+                        <a href="https://www.facebook.com/PentagoneMusic/" style="text-decoration: none;">Voir Plus</a>
+                    </div>
+                    <div class="hoverme">Passe ta souris pour en savoir plus</div>
+                </div>
+            </div>
+
         </div>
     </section>
     <section id="sec3">
         <div class="setionTitle">VIDEO</div>
-        <div id="player"></div>
+
+        <div id="player">
+
+        </div>
     </section>
     <section id="sec4">
         <div class="setionTitle">DATES AV/AP</div>
@@ -92,7 +137,8 @@
                     <hr>
                     <div class="dateCardText">
                         <ul>
-                            <li><h1>gsdhjgds</h1>date 1</li>
+                            <li>date 1
+                            </li>
                             <li>date 2</li>
                             <li>date 3</li>
                             <li>date 4</li>
@@ -108,18 +154,45 @@
                         Dates à venir
                     </div>
                     <hr>
-                    <div class="dateCardText"><ul>
-                        <li>date 1</li>
-                        <li>date 2</li>
-                        <li>date 3</li>
-                        <li>date 4</li>
-                        <li>...</li>
-                    </ul></div>
+                    <div class="dateCardText">
+                        <ul>
+                            <li>date 1</li>
+                            <li>date 2</li>
+                            <li>date 3</li>
+                            <li>date 4</li>
+                            <li>...</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="sec5">Dates AV/AP</section>
+    <section id="sec5">
+        <div class="setionTitle">CONTACT</div>
+        <div class="contactInfos">
+            <div class="telephone">
+                <div class="Label">Téléphone :</div>
+                <hr>
+                <a href="tel:0751612518" class="telephoneText">07 51 61 25 18</a>
+            </div>
+            <div class="mail">
+                <div class="Label">Mail :</div>
+                <hr>
+                <a href="mailto:Contact@PierroProd.fr" class="mailText">Contact@PierroProd.fr</a>
+            </div>
+            <div class="socials">
+                <div class="Label">Réseaux sociaux :</div>
+                <hr>
+                <a href="#"><img class="socialImg" src="/imgs/youtube.png" alt="Lien vers Youtube via logo youtube"></a>
+                <a href="#"><img class="socialImg" src="/imgs/instagram.png" alt="Lien vers instagram via logo instagram"></a>
+                <a href="#"><img class="socialImg" src="/imgs/facebook.png" alt="Lien vers facebook via logo facebook"></a>
+            </div>
+        </div>
+
+
+        <div class="madeBy">Développé par <a href="https://github.com/MathisAlleaume"
+                style="text-decoration: none; color: white; margin-left: 3px;">Mathis ALLEAUME</a> - 2021</div>
+    </section>
 
     <script src="./js/jquery/jquery.min.js"></script>
     <script src="./js/jquery-easing/jquery.easing.min.js"></script>
