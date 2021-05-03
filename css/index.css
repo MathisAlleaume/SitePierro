@@ -518,7 +518,7 @@ body {
             flex-direction: row;
   }
   #sec2 {
-    height: 37vh;
+    height: 45vh;
   }
   #sec2 .presCards {
     -webkit-box-orient: horizontal;
@@ -542,6 +542,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 10pt;
     color: #7d7d7d;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   #sec2 .presCards .presCard:hover .presCardImg {
     height: 50px !important;
