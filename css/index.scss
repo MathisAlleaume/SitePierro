@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
+@font-face {
+    font-family: "harlow";
+    src: url('/fonts/Harlow\ Solid\ Regular.ttf');
+}
 
 body {
     margin: 0;
@@ -98,13 +102,14 @@ body {
 
 
     .logo {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'harlow';
         font-size: 25pt;
         // margin-right: auto;
         // margin-left: auto;
         color: white;
         text-decoration: none;
         font-weight: 700;
+        line-height: 50px;
     }
 
     .menu {
